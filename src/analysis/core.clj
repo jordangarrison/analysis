@@ -1,11 +1,10 @@
 (ns analysis.core
-  (:require [analysis.ltp.gorfile])
-            ;; [cli-matic.core :refer [run-cmd]])
+  (:require [analysis.goreplay.gorfile])
   (:gen-class))
 
 (defn -main
   "Run a given analysis tool"
   [& args]
   (println (time (case (first args)
-                   "gorfile" (analysis.ltp.gorfile/main (second args))
+                   "gorfile" (analysis.goreplay.gorfile/main (second args))
                    "Please specify a command:\n\tgorfile"))))

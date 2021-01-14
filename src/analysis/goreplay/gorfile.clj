@@ -1,4 +1,4 @@
-(ns analysis.ltp.gorfile
+(ns analysis.goreplay.gorfile
   (:require [clojure.string :as string]))
 
 (defn read-data [f]
