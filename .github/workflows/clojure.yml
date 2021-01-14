@@ -19,7 +19,7 @@ jobs:
       run: lein test
     - name: Build uberjar
       run: lein compile && lein uberjar
-    - name: Upload jar
-      uses: actions/upload-artifact
-      with:
-        path: target/uberjar/analysis-0.1.0-SNAPSHOT-standalone.jar
+    # - name: Upload jar
+    #   uses: actions/upload-artifact
+    #   with:
+    #     path: target/uberjar/analysis-0.1.0-SNAPSHOT-standalone.jar
